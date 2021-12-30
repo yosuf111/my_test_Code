@@ -7,7 +7,6 @@ import struct
 from tkinter import Button, Tk
 import pandas as pd
 
-
 load_vdata_list = []
 load_idata_list = []
 charge_vdata_list = []
@@ -17,11 +16,6 @@ Load_V_query = [0XA1,0XA2,0X00,0X11,0X00,0X00,0X00,0X54,0X73,0X74]  #负载器�
 Load_I_query = [0XA1,0XA2,0X00,0X12,0X00,0X00,0X00,0X55,0X73,0X74]  #负载器电流查询方法
 Charge_V_query = [0X01,0X03,0X0B,0XBC,0X00,0X02,0X07,0XCB]          #充电器电压查询方法
 Charge_I_query = [0X01,0X03,0X0B,0XBE,0X00,0X02,0XA6,0X0B]          #充电器电流查询方法
-
-
-
-
-
 
 #充电器计算方法
 def charge_mechine_in(cmi):
