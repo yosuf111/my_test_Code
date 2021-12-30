@@ -21,6 +21,8 @@ Charge_I_query = [0X01,0X03,0X0B,0XBE,0X00,0X02,0XA6,0X0B]          #充电器�
 
 
 
+
+
 #充电器计算方法
 def charge_mechine_in(cmi):
     s = ''
