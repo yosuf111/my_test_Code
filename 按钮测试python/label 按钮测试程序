@@ -1,0 +1,25 @@
+"""
+coding='utf-8'
+date: 2022.01.09
+readme:这是一个上位机程序，可以控制电池实验设备
+"""
+from tkinter import *
+import matplotlib
+
+root = Tk()
+text = StringVar()
+text.set('请输入电流')
+
+
+def change():
+    text.set(entry1.get())
+    num = entry1.get()
+    print(num)
+
+
+Button(root, text='click', command=change).pack()
+Label(root, textvariable=text).pack()
+entry1 = Entry(root)
+entry1.pack()
+
+root.mainloop()
